@@ -12,7 +12,36 @@
 		D403FE97218C4D5D0085DA05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D403FE95218C4D5D0085DA05 /* Main.storyboard */; };
 		D403FE99218C4D5D0085DA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D403FE98218C4D5D0085DA05 /* Assets.xcassets */; };
 		D403FE9C218C4D5D0085DA05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D403FE9A218C4D5D0085DA05 /* LaunchScreen.storyboard */; };
+		D4557427218C595B0072530A /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4557426218C595B0072530A /* AuthenticationServices.framework */; };
+		D455742D218C59A70072530A /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4557426218C595B0072530A /* AuthenticationServices.framework */; };
+		D4557430218C59A70072530A /* CredentialProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D455742F218C59A70072530A /* CredentialProviderViewController.swift */; };
+		D4557433218C59A70072530A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4557431218C59A70072530A /* MainInterface.storyboard */; };
+		D4557438218C59A70072530A /* AutoFillCredentialProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D455742C218C59A70072530A /* AutoFillCredentialProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4557436218C59A70072530A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D403FE86218C4D5D0085DA05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D455742B218C59A70072530A;
+			remoteInfo = AutoFillCredentialProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D455743C218C59A70072530A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4557438218C59A70072530A /* AutoFillCredentialProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D403FE8E218C4D5D0085DA05 /* autofill-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "autofill-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +51,13 @@
 		D403FE98218C4D5D0085DA05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D403FE9B218C4D5D0085DA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D403FE9D218C4D5D0085DA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4557424218C595B0072530A /* autofill-practice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "autofill-practice.entitlements"; sourceTree = "<group>"; };
+		D4557426218C595B0072530A /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		D455742C218C59A70072530A /* AutoFillCredentialProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AutoFillCredentialProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D455742F218C59A70072530A /* CredentialProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialProviderViewController.swift; sourceTree = "<group>"; };
+		D4557432218C59A70072530A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D4557434218C59A70072530A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4557435218C59A70072530A /* AutoFillCredentialProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoFillCredentialProvider.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +65,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4557427218C595B0072530A /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4557429218C59A70072530A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D455742D218C59A70072530A /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				D403FE90218C4D5D0085DA05 /* autofill-practice */,
+				D455742E218C59A70072530A /* AutoFillCredentialProvider */,
 				D403FE8F218C4D5D0085DA05 /* Products */,
+				D4557425218C595B0072530A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D403FE8E218C4D5D0085DA05 /* autofill-practice.app */,
+				D455742C218C59A70072530A /* AutoFillCredentialProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +102,7 @@
 		D403FE90218C4D5D0085DA05 /* autofill-practice */ = {
 			isa = PBXGroup;
 			children = (
+				D4557424218C595B0072530A /* autofill-practice.entitlements */,
 				D403FE91218C4D5D0085DA05 /* AppDelegate.swift */,
 				D403FE93218C4D5D0085DA05 /* ViewController.swift */,
 				D403FE95218C4D5D0085DA05 /* Main.storyboard */,
@@ -62,6 +111,25 @@
 				D403FE9D218C4D5D0085DA05 /* Info.plist */,
 			);
 			path = "autofill-practice";
+			sourceTree = "<group>";
+		};
+		D4557425218C595B0072530A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4557426218C595B0072530A /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D455742E218C59A70072530A /* AutoFillCredentialProvider */ = {
+			isa = PBXGroup;
+			children = (
+				D455742F218C59A70072530A /* CredentialProviderViewController.swift */,
+				D4557431218C59A70072530A /* MainInterface.storyboard */,
+				D4557434218C59A70072530A /* Info.plist */,
+				D4557435218C59A70072530A /* AutoFillCredentialProvider.entitlements */,
+			);
+			path = AutoFillCredentialProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +142,34 @@
 				D403FE8A218C4D5D0085DA05 /* Sources */,
 				D403FE8B218C4D5D0085DA05 /* Frameworks */,
 				D403FE8C218C4D5D0085DA05 /* Resources */,
+				D455743C218C59A70072530A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D4557437218C59A70072530A /* PBXTargetDependency */,
 			);
 			name = "autofill-practice";
 			productName = "autofill-practice";
 			productReference = D403FE8E218C4D5D0085DA05 /* autofill-practice.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D455742B218C59A70072530A /* AutoFillCredentialProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4557439218C59A70072530A /* Build configuration list for PBXNativeTarget "AutoFillCredentialProvider" */;
+			buildPhases = (
+				D4557428218C59A70072530A /* Sources */,
+				D4557429218C59A70072530A /* Frameworks */,
+				D455742A218C59A70072530A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoFillCredentialProvider;
+			productName = AutoFillCredentialProvider;
+			productReference = D455742C218C59A70072530A /* AutoFillCredentialProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,12 +177,20 @@
 		D403FE86218C4D5D0085DA05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Jinsei Shima";
 				TargetAttributes = {
 					D403FE8D218C4D5D0085DA05 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.AutoFillCredentialProvider = {
+								enabled = 1;
+							};
+						};
+					};
+					D455742B218C59A70072530A = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
@@ -113,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				D403FE8D218C4D5D0085DA05 /* autofill-practice */,
+				D455742B218C59A70072530A /* AutoFillCredentialProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D455742A218C59A70072530A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4557433218C59A70072530A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +244,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4557428218C59A70072530A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4557430218C59A70072530A /* CredentialProviderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4557437218C59A70072530A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D455742B218C59A70072530A /* AutoFillCredentialProvider */;
+			targetProxy = D4557436218C59A70072530A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D403FE95218C4D5D0085DA05 /* Main.storyboard */ = {
@@ -157,6 +277,14 @@
 				D403FE9B218C4D5D0085DA05 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4557431218C59A70072530A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4557432218C59A70072530A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,14 +407,18 @@
 		D403FEA1218C4D5D0085DA05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "autofill-practice/autofill-practice.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T4PJ8WCZ;
 				INFOPLIST_FILE = "autofill-practice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.eure.reception.autofill-practice";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shima.autofill-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,16 +428,65 @@
 		D403FEA2218C4D5D0085DA05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "autofill-practice/autofill-practice.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T4PJ8WCZ;
 				INFOPLIST_FILE = "autofill-practice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.eure.reception.autofill-practice";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shima.autofill-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D455743A218C59A70072530A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutoFillCredentialProvider/AutoFillCredentialProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T4PJ8WCZ;
+				INFOPLIST_FILE = AutoFillCredentialProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shima.autofill-practice.AutoFillCredentialProvider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D455743B218C59A70072530A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutoFillCredentialProvider/AutoFillCredentialProvider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T4PJ8WCZ;
+				INFOPLIST_FILE = AutoFillCredentialProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shima.autofill-practice.AutoFillCredentialProvider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -327,6 +508,15 @@
 			buildConfigurations = (
 				D403FEA1218C4D5D0085DA05 /* Debug */,
 				D403FEA2218C4D5D0085DA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4557439218C59A70072530A /* Build configuration list for PBXNativeTarget "AutoFillCredentialProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D455743A218C59A70072530A /* Debug */,
+				D455743B218C59A70072530A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
