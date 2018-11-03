@@ -8,6 +8,13 @@
 
 import UIKit
 
+import AuthenticationServices
+
+class CredentialProvider: ASCredentialProviderViewController {
+    
+}
+
+
 class ViewController: UIViewController {
 
     let emailTextField = UITextField()
