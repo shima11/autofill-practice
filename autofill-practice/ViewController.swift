@@ -19,23 +19,26 @@ class ViewController: UIViewController {
 
     let emailTextField = UITextField()
     let pinCodeTextField = UITextField()
+    let passwordTextField = UITextField()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Proactive Suggestions
         // emailなどtextContentTypeに指定したコンテンツを入力補完として表示
         // UITextInputTraitsに準拠しているUITextViewとUITextFieldで使用できる
         // 他のアプリで最近入力したデータが候補として表示される
         
-        emailTextField.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 40, height: 40)
+        let rect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 40, height: 40)
+
+        emailTextField.frame = rect
         emailTextField.center = CGPoint(x: view.center.x, y: view.center.y - 100)
         emailTextField.textContentType = .emailAddress
         emailTextField.keyboardType = .emailAddress
         emailTextField.backgroundColor = .groupTableViewBackground
         view.addSubview(emailTextField)
         
-        pinCodeTextField.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 40, height: 40)
+        pinCodeTextField.frame = rect
         pinCodeTextField.center = view.center
         if #available(iOS 12.0, *) {
             pinCodeTextField.textContentType = .oneTimeCode
@@ -44,6 +47,14 @@ class ViewController: UIViewController {
         pinCodeTextField.backgroundColor = .groupTableViewBackground
         view.addSubview(pinCodeTextField)
 
+        passwordTextField.frame = rect
+        passwordTextField.center = CGPoint(x: view.center.x, y: view.center.y + 100)
+        if #available(iOS 12.0, *) {
+            passwordTextField.textContentType = UITextContentType.newPassword
+        }
+        passwordTextField.keyboardType = .numbersAndPunctuation
+        passwordTextField.backgroundColor = .groupTableViewBackground
+        view.addSubview(passwordTextField)
         
         
     }
