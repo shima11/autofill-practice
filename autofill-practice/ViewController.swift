@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import StackScrollView
+import Then
+import EasyPeasy
+
 
 import AuthenticationServices
 
@@ -17,46 +21,85 @@ class CredentialProvider: ASCredentialProviderViewController {
 
 class ViewController: UIViewController {
 
-    let emailTextField = UITextField()
-    let pinCodeTextField = UITextField()
-    let passwordTextField = UITextField()
+    let stackScrollView = StackScrollView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        view.backgroundColor = .white
+        view.addSubview(stackScrollView)
+        stackScrollView.frame = view.bounds
+
         // Proactive Suggestions
         // emailなどtextContentTypeに指定したコンテンツを入力補完として表示
         // UITextInputTraitsに準拠しているUITextViewとUITextFieldで使用できる
         // 他のアプリで最近入力したデータが候補として表示される
-        
-        let rect = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 40, height: 40)
 
-        emailTextField.frame = rect
-        emailTextField.center = CGPoint(x: view.center.x, y: view.center.y - 100)
-        emailTextField.textContentType = .emailAddress
-        emailTextField.keyboardType = .emailAddress
-        emailTextField.backgroundColor = .groupTableViewBackground
-        view.addSubview(emailTextField)
-        
-        pinCodeTextField.frame = rect
-        pinCodeTextField.center = view.center
-        if #available(iOS 12.0, *) {
-            pinCodeTextField.textContentType = .oneTimeCode
-        }
-        pinCodeTextField.keyboardType = .numbersAndPunctuation
-        pinCodeTextField.backgroundColor = .groupTableViewBackground
-        view.addSubview(pinCodeTextField)
+        stackScrollView.append(views: [
+            UILabel().then { $0.text = "email textview" },
+            UITextView().then {
+                $0.textContentType = .emailAddress
+                $0.keyboardType = .emailAddress
+                $0.easy.layout(Height(40))
+            },
+            UILabel().then { $0.text = "email textfield" },
+            UITextField().then {
+                $0.textContentType = .emailAddress
+                $0.keyboardType = .emailAddress
+                $0.easy.layout(Height(40))
+            },
+            UILabel().then { $0.text = "pincode textview" },
+            UITextView().then {
+                $0.textContentType = .oneTimeCode
+                $0.keyboardType = .numberPad
+                $0.easy.layout(Height(40))
+            },
+            UILabel().then { $0.text = "pincode textfield" },
+            UITextField().then {
+                $0.textContentType = .oneTimeCode
+                $0.keyboardType = .numberPad
+                $0.easy.layout(Height(40))
+            },
+            UILabel().then { $0.text = "password textview" },
+            UITextView().then {
+                $0.textContentType = .newPassword
+                $0.keyboardType = .numbersAndPunctuation
+                $0.easy.layout(Height(40))
+            },
+            UILabel().then { $0.text = "password textfield" },
+            UITextField().then {
+                $0.textContentType = .newPassword
+                $0.keyboardType = .numbersAndPunctuation
+                $0.easy.layout(Height(40))
+            },
+            UILabel().then { $0.text = "fullstreetAddress textview" },
+            UITextView().then {
+                $0.textContentType = UITextContentType.fullStreetAddress
+                $0.easy.layout(Height(40))
+            },
+            UILabel().then { $0.text = "fullstreetAddress textfield" },
+            UITextField().then {
+                $0.textContentType = .fullStreetAddress
+                $0.easy.layout(Height(40))
+            },
+            ])
 
-        passwordTextField.frame = rect
-        passwordTextField.center = CGPoint(x: view.center.x, y: view.center.y + 100)
-        if #available(iOS 12.0, *) {
-            passwordTextField.textContentType = UITextContentType.newPassword
-        }
-        passwordTextField.keyboardType = .numbersAndPunctuation
-        passwordTextField.backgroundColor = .groupTableViewBackground
-        view.addSubview(passwordTextField)
-        
-        
+
+        NotificationCenter
+            .default
+            .addObserver(
+                self,
+                selector: #selector(keyboardDidChangeFrame(notification:)),
+                name: UIResponder.keyboardDidChangeFrameNotification,
+                object: nil
+        )
+
+    }
+
+    @objc func keyboardDidChangeFrame(notification: Notification) {
+
+        let keyboardHeight: CGFloat = 200
+        stackScrollView.contentInset = .init(top: 0, left: 0, bottom: keyboardHeight, right: 0)
     }
 
 }

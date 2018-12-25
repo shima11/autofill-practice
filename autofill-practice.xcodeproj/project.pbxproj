@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B69C98DFE0E5282B2B8C653 /* Pods_AutoFillCredentialProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9388BFAE6E5E4096BB96636 /* Pods_AutoFillCredentialProvider.framework */; };
+		B3EF00684136B45EADA4F801 /* Pods_autofill_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D844B202E65E3D6EC3129B2E /* Pods_autofill_practice.framework */; };
 		D403FE92218C4D5D0085DA05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D403FE91218C4D5D0085DA05 /* AppDelegate.swift */; };
 		D403FE94218C4D5D0085DA05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D403FE93218C4D5D0085DA05 /* ViewController.swift */; };
-		D403FE97218C4D5D0085DA05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D403FE95218C4D5D0085DA05 /* Main.storyboard */; };
 		D403FE99218C4D5D0085DA05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D403FE98218C4D5D0085DA05 /* Assets.xcassets */; };
 		D403FE9C218C4D5D0085DA05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D403FE9A218C4D5D0085DA05 /* LaunchScreen.storyboard */; };
 		D4557427218C595B0072530A /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4557426218C595B0072530A /* AuthenticationServices.framework */; };
@@ -44,10 +45,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		ACC25AF34503401FD6750DF0 /* Pods-AutoFillCredentialProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoFillCredentialProvider.release.xcconfig"; path = "Target Support Files/Pods-AutoFillCredentialProvider/Pods-AutoFillCredentialProvider.release.xcconfig"; sourceTree = "<group>"; };
+		C7C8E82DD7347BF5AED14806 /* Pods-autofill-practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autofill-practice.release.xcconfig"; path = "Target Support Files/Pods-autofill-practice/Pods-autofill-practice.release.xcconfig"; sourceTree = "<group>"; };
 		D403FE8E218C4D5D0085DA05 /* autofill-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "autofill-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D403FE91218C4D5D0085DA05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D403FE93218C4D5D0085DA05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D403FE96218C4D5D0085DA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D403FE98218C4D5D0085DA05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D403FE9B218C4D5D0085DA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D403FE9D218C4D5D0085DA05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +60,10 @@
 		D4557432218C59A70072530A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		D4557434218C59A70072530A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4557435218C59A70072530A /* AutoFillCredentialProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoFillCredentialProvider.entitlements; sourceTree = "<group>"; };
+		D844B202E65E3D6EC3129B2E /* Pods_autofill_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_autofill_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2C47631AD81AE4F7D3BEB3 /* Pods-AutoFillCredentialProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoFillCredentialProvider.debug.xcconfig"; path = "Target Support Files/Pods-AutoFillCredentialProvider/Pods-AutoFillCredentialProvider.debug.xcconfig"; sourceTree = "<group>"; };
+		F9388BFAE6E5E4096BB96636 /* Pods_AutoFillCredentialProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoFillCredentialProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0DCFC6B1B94E806478C50A /* Pods-autofill-practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autofill-practice.debug.xcconfig"; path = "Target Support Files/Pods-autofill-practice/Pods-autofill-practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4557427218C595B0072530A /* AuthenticationServices.framework in Frameworks */,
+				B3EF00684136B45EADA4F801 /* Pods_autofill_practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +81,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				D455742D218C59A70072530A /* AuthenticationServices.framework in Frameworks */,
+				8B69C98DFE0E5282B2B8C653 /* Pods_AutoFillCredentialProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B09FB4CBC115D7BAA835D585 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C47631AD81AE4F7D3BEB3 /* Pods-AutoFillCredentialProvider.debug.xcconfig */,
+				ACC25AF34503401FD6750DF0 /* Pods-AutoFillCredentialProvider.release.xcconfig */,
+				FA0DCFC6B1B94E806478C50A /* Pods-autofill-practice.debug.xcconfig */,
+				C7C8E82DD7347BF5AED14806 /* Pods-autofill-practice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D403FE85218C4D5D0085DA05 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +106,7 @@
 				D455742E218C59A70072530A /* AutoFillCredentialProvider */,
 				D403FE8F218C4D5D0085DA05 /* Products */,
 				D4557425218C595B0072530A /* Frameworks */,
+				B09FB4CBC115D7BAA835D585 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +125,6 @@
 				D4557424218C595B0072530A /* autofill-practice.entitlements */,
 				D403FE91218C4D5D0085DA05 /* AppDelegate.swift */,
 				D403FE93218C4D5D0085DA05 /* ViewController.swift */,
-				D403FE95218C4D5D0085DA05 /* Main.storyboard */,
 				D403FE98218C4D5D0085DA05 /* Assets.xcassets */,
 				D403FE9A218C4D5D0085DA05 /* LaunchScreen.storyboard */,
 				D403FE9D218C4D5D0085DA05 /* Info.plist */,
@@ -117,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				D4557426218C595B0072530A /* AuthenticationServices.framework */,
+				F9388BFAE6E5E4096BB96636 /* Pods_AutoFillCredentialProvider.framework */,
+				D844B202E65E3D6EC3129B2E /* Pods_autofill_practice.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,10 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D403FEA0218C4D5D0085DA05 /* Build configuration list for PBXNativeTarget "autofill-practice" */;
 			buildPhases = (
+				22AFFB8B083FC98BE5007CA9 /* [CP] Check Pods Manifest.lock */,
 				D403FE8A218C4D5D0085DA05 /* Sources */,
 				D403FE8B218C4D5D0085DA05 /* Frameworks */,
 				D403FE8C218C4D5D0085DA05 /* Resources */,
 				D455743C218C59A70072530A /* Embed App Extensions */,
+				B63A2A97235675F621A6EBE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4557439218C59A70072530A /* Build configuration list for PBXNativeTarget "AutoFillCredentialProvider" */;
 			buildPhases = (
+				D088C364187AB27954622693 /* [CP] Check Pods Manifest.lock */,
 				D4557428218C59A70072530A /* Sources */,
 				D4557429218C59A70072530A /* Frameworks */,
 				D455742A218C59A70072530A /* Resources */,
@@ -220,7 +244,6 @@
 			files = (
 				D403FE9C218C4D5D0085DA05 /* LaunchScreen.storyboard in Resources */,
 				D403FE99218C4D5D0085DA05 /* Assets.xcassets in Resources */,
-				D403FE97218C4D5D0085DA05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +256,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22AFFB8B083FC98BE5007CA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-autofill-practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B63A2A97235675F621A6EBE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-autofill-practice/Pods-autofill-practice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/StackScrollView/StackScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StackScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-autofill-practice/Pods-autofill-practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D088C364187AB27954622693 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoFillCredentialProvider-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D403FE8A218C4D5D0085DA05 /* Sources */ = {
@@ -263,14 +359,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D403FE95218C4D5D0085DA05 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D403FE96218C4D5D0085DA05 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D403FE9A218C4D5D0085DA05 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -406,6 +494,7 @@
 		};
 		D403FEA1218C4D5D0085DA05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0DCFC6B1B94E806478C50A /* Pods-autofill-practice.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -420,13 +509,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shima.autofill-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D403FEA2218C4D5D0085DA05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7C8E82DD7347BF5AED14806 /* Pods-autofill-practice.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -441,13 +531,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shima.autofill-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		D455743A218C59A70072530A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2C47631AD81AE4F7D3BEB3 /* Pods-AutoFillCredentialProvider.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AutoFillCredentialProvider/AutoFillCredentialProvider.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +562,7 @@
 		};
 		D455743B218C59A70072530A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC25AF34503401FD6750DF0 /* Pods-AutoFillCredentialProvider.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AutoFillCredentialProvider/AutoFillCredentialProvider.entitlements;
 				CODE_SIGN_STYLE = Automatic;

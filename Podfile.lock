@@ -1,0 +1,24 @@
+PODS:
+  - EasyPeasy (1.8.0)
+  - StackScrollView (1.4.0)
+  - Then (2.4.0)
+
+DEPENDENCIES:
+  - EasyPeasy
+  - StackScrollView
+  - Then
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EasyPeasy
+    - StackScrollView
+    - Then
+
+SPEC CHECKSUMS:
+  EasyPeasy: bfffe5d47bbaaef3e32888c250a196768484b43a
+  StackScrollView: f0b1520e8fd373d528fe65ae17833af0f4077e57
+  Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
+
+PODFILE CHECKSUM: 6182bb7607a65b39a9b84c6d8ba9337c7b701917
+
+COCOAPODS: 1.6.0.beta.2
